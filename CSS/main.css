@@ -5,7 +5,7 @@ body{
     margin: 0;
 
 }
-ul{ 
+nav{ 
     display: flex;
     flex-direction: row;
     align-content: space-between;
@@ -47,16 +47,23 @@ h1{
     text-align: center;
 }
 
-.img{
-    width: inherit;
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
 }
 
-.nav{
+.links{
     display: flex;
     flex-direction: row;
     
-    flex: 0 0 30%;
+    flex: 1 1 auto;
     justify-content: space-around;
+}
+
+.searchBox{
+    display: flex;
+    height: auto;
 }
 
 .search{
@@ -66,14 +73,19 @@ h1{
     text-align: center;
 
     border-radius: 5px;
+    background-color: rgb(73, 70, 70);
+    height: 45px;
 }
 .search:hover{
-    background-color: rgb(73, 70, 70);
+    color: rgb(73, 70, 70);
+    background-color: white;
+    transition: 0.1s;
 }
+
 .logo{
     display: flex;
     flex-direction: row;
-    flex: 0 0 40%;
+    flex: 0 1 auto;
     justify-content: flex-start;
 }
 
@@ -98,15 +110,22 @@ h1{
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.719);
   
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  transition: all 1s ease;
+    transform: scale(1);  
+}
+
+.link:hover {
+    transform: scale(1.1) perspective(1px)
 }
 
 .link:active {
-  transform: translate(0px, 5px);  
+  transform: translate(0px, 5px);
   box-shadow: 0px 1px 0px 0px;
 }
 
 
-.link2::after{
+.block::after{
     content: "";
     display: block;
     position: relative;
@@ -115,10 +134,10 @@ h1{
     background: rgb(0, 0, 0);
     transition: transform 0.2s ease-in-out;
     transform: scale(0);
-}
-.link2:hover::after{
-    transform: scale(1);
     
+}
+.block:hover::after{
+    transform: scale(1);
 }
 
 .selected::after{
@@ -129,14 +148,4 @@ h1{
     height: 2px;;
     background: rgb(0, 0, 0);
     transform: scale(1.5);
-}
-
-
-.link3 {
-    transition: all 1s ease;
-    transform: scale(1);  
-  }
-  
-.link3:hover {
-    transform: scale(1.1) perspective(1px)
 }
