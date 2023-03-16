@@ -6,32 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webshop | Home</title>
     <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/dropdown.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo">
-          <p>Logo</p>
-        </div>
         <div class="links">
-          <a class="link block top" href="autos.html">PH</a>
+          <a class="link block top" href="">PH</a>
           <a class="link block top" href="">PH</a>
           <a class="link block top" href="">PH</a>
         </div>
-        <div class="searchBox">
-          <input class="search" type="text" placeholder="Search.." />
+
+        <div class="more">
+          <div class="searchBox">
+            <input class="search" type="text" placeholder="Search.." />
+          </div>
+        <div class="sec-center">
+
+          <input
+            class="dropdown"
+            type="checkbox"
+            id="dropdown"
+            name="dropdown"
+          />
+
+          <label class="for-dropdown" for="dropdown"
+            ><img
+              src="/IMG/burgerMenu.png"
+              alt="MoreDropdown"
+              height="20px"
+              width="20px" />
+          </label>
+
+
+          <div class="section-dropdown">
+            <a href="">Dropdown Link </a>
+            <input
+              class="dropdown-sub"
+              type="checkbox"
+              id="dropdown-sub"
+              name="dropdown-sub"
+            />
+
+            <label class="for-dropdown-sub" for="dropdown-sub"
+              >Dropdown Sub</label
+            >
+
+            <div class="section-dropdown-sub">
+              <a href="#">Dropdown Link </a>
+              <a href="#">Dropdown Link </a>
+            </div>
+            <a href="#">Dropdown Link </a>
+            <a href="#">Dropdown Link </a>
+          </div>
+
+
         </div>
+      </div>
+
       </nav>
     </header>
-
-    <div>
-      <img
-        class="img"
-        src="../IMG/temp.jpeg"
-        width="500"
-        height="500"
-        alt="temp"
-      />
-    </div>
   </body>
 </html>
