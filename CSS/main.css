@@ -46,6 +46,7 @@ nav{
     background-color: white;
     
     width: 100%;
+    box-shadow: 0px 0 100px rgba(255, 234, 167, 0.4);  
 }
 
 .logo{
@@ -84,9 +85,14 @@ nav{
 }
 
 .link:hover {
+<<<<<<< Updated upstream
     transition: 0.3s;
     transform: scale(1.1) perspective(1px)
 }
+=======
+    box-shadow: 0px 0 100px rgba(255, 234, 167, 0.4);  
+}   
+>>>>>>> Stashed changes
 
 .link:active {
   transform: translate(0px, 5px);
@@ -105,5 +111,12 @@ nav{
     transform: scale(0);
 }
 .block:hover::after{
+<<<<<<< Updated upstream
     transform: scale(1);
 }
+=======
+    transform: scale(1.2); 
+}
+
+
+>>>>>>> Stashed changes
