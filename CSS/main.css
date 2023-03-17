@@ -1,9 +1,17 @@
 
 
-body{   
-    background-color: white;
-    margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.4;
+	color: #fff;
+	background-color: #1f2029;
+
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 4%;
 }
 
 p{
@@ -15,17 +23,24 @@ p{
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
     align-items: center;
     background-color: rgba(69, 64, 64, 0.986);
 }
 
+.more{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    flex: 0 1 15%;
+}
 .searchBox{
     display: flex;
-    height: auto;
+    height: 50px;
     justify-content: flex-end;
-    width: 20%;
+    width: auto;
 }
 
 .search{
@@ -33,15 +48,16 @@ nav{
     font-size: 20px;
     text-decoration: solid;
     text-align: center;
+    outline: none;
 
-    border-radius: 5px;
+    border-radius: 20px;
     color: black;
     background-color: rgb(222, 216, 216);
     padding: 6%;
     width: 35%;
     transition: 0.3s;
 }
-.search:focus{
+.search:hover{
     color: rgb(73, 70, 70);
     background-color: white;
     
@@ -68,7 +84,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex: 0 1 40%;
+    flex: 0 1 20%;
 }
 
 .link {
@@ -83,10 +99,7 @@ nav{
     transform: scale(1);
 }
 
-.link:hover {
-    transition: 0.3s;
-    transform: scale(1.1) perspective(1px)
-}
+
 
 .link:active {
   transform: translate(0px, 5px);
@@ -107,3 +120,5 @@ nav{
 .block:hover::after{
     transform: scale(1);
 }
+
+
