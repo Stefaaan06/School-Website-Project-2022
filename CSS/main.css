@@ -24,16 +24,17 @@ p{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: rgba(69, 64, 64, 0.986);
 }
 
 .more{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
-    flex: 0 1 15%;
+    justify-content: space-between;
+    align-content: center;
+    margin-right: 20px; /* ist für das burger menu*/
+    flex: 0 1 21%;
 }
 .searchBox{
     display: flex;
@@ -120,4 +121,7 @@ nav{
     transform: scale(1);
 }
 
-
+.burger{
+    display: flex;
+    margin-top: 24px; /* für das burger menu */
+}
