@@ -13,44 +13,48 @@
   transform: rotate(90deg);
 }
 #menu__toggle:checked ~ .menu__box {
-  left: 0 !important;
+  right: 0 !important;
 }
+
 .menu__btn {
+  display: flex;
+  position: fixed;
   width: 26px;
   height: 26px;
-  display: flex;
+  cursor: pointer;
+  z-index: 1;
 }
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
   display: block;
   position: absolute;
-  width: 20px;
-  height: 2px;
-  background-color: #616161;
+  width: 40px;
+  height: 4px;
+  background-color: #ffffffa4;
   transition-duration: .25s;
 }
 .menu__btn > span::before {
   content: '';
-  top: -8px;
+  top: -16px;
 }
 .menu__btn > span::after {
   content: '';
-  top: 8px;
+  top: 16px;
 }
 .menu__box {
   display: block;
   position: fixed;
   top: 0;
-  left: -100%;
+  right: -100%;
   width: 300px;
   height: 100%;
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #ECEFF1;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-  transition-duration: .25s;
+  background-color: #dddcdc;
+  box-shadow: 2px 2px 6px rgb(0, 0, 0);
+  transition-duration: .30s;
 }
 .menu__item {
   display: block;
@@ -60,12 +64,8 @@
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  transition-duration: .25s;
+  transition-duration: .30s;
 }
 .menu__item:hover {
-  background-color: #CFD8DC;
-}
-.hamburger-menu{
-  display: flex;
-  justify-content: center;
+  background-color: #00000059;
 }

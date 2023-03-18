@@ -23,9 +23,8 @@ p{
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
-    align-items: center;
     background-color: rgba(69, 64, 64, 0.986);
 }
 
@@ -60,7 +59,7 @@ nav{
 .search:hover{
     color: rgb(73, 70, 70);
     background-color: white;
-    
+    box-shadow: 0 0 30px 5px #cfb41d2d;
     width: 100%;
 }
 
