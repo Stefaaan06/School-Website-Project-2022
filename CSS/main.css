@@ -97,3 +97,7 @@ p{
   display: flex;
   margin-top: 24px; /* für das burger menu */
 }
+
+.fa-solid{
+  margin-left: 24px;
+}
