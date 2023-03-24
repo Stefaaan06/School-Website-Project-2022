@@ -2,13 +2,16 @@
   opacity: 0;
 }
 #menu__toggle:checked + .menu__btn > span {
+  background-color: black;
   transform: rotate(45deg);
 }
 #menu__toggle:checked + .menu__btn > span::before {
+  background-color: black;
   top: 0;
   transform: rotate(0deg);
 }
 #menu__toggle:checked + .menu__btn > span::after {
+  background-color: black;
   top: 0;
   transform: rotate(90deg);
 }
@@ -18,7 +21,7 @@
 
 .menu__btn {
   display: flex;
-  position: fixed;
+  position: absolute;
   width: 26px;
   height: 26px;
   cursor: pointer;
@@ -31,7 +34,7 @@
   position: absolute;
   width: 40px;
   height: 4px;
-  background-color: #ffffffa4;
+  background-color: white;
   transition-duration: .25s;
 }
 .menu__btn > span::before {
@@ -44,7 +47,7 @@
 }
 .menu__box {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: -100%;
   width: 300px;
@@ -52,7 +55,8 @@
   margin: 0;
   padding: 0 0;
   list-style: none;
-  background-color: rgb(222, 216, 216);
+  background-color: white;
+
   box-shadow: 2px 2px 6px rgb(0, 0, 0);
   transition-duration: .30s;
 }
@@ -72,5 +76,24 @@
 
 .account{
   display: flex;
+  align-content: center;
   height: 80px;
+}
+.account_item {
+  display: block;
+  padding: 23px 5px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .30s;
+  margin-top: 10px;
+}
+
+.account_item:hover{
+  color: #00000059;
+}
+.account_img{
+  padding: 16px 12px 8px 24px;
 }
