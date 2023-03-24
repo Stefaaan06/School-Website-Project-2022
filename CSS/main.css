@@ -16,6 +16,7 @@ body {
 
 p {
   color: rgb(255, 255, 255);
+
   font-size: 22px;
   text-align: center;
 }
@@ -95,8 +96,4 @@ p{
 .burger {
   display: flex;
   margin-top: 24px; /* für das burger menu */
-}
-
-.fa-solid{
-  margin-left: 10px;
 }
