@@ -50,7 +50,7 @@
   width: 300px;
   height: 100%;
   margin: 0;
-  padding: 80px 0;
+  padding: 0 0;
   list-style: none;
   background-color: rgb(222, 216, 216);
   box-shadow: 2px 2px 6px rgb(0, 0, 0);
@@ -68,4 +68,9 @@
 }
 .menu__item:hover {
   background-color: #00000059;
+}
+
+.account{
+  display: flex;
+  height: 80px;
 }

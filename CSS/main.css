@@ -83,3 +83,7 @@ nav {
   display: flex;
   margin-top: 24px; /* für das burger menu */
 }
+
+.account{
+  border-radius: 100%;
+}
