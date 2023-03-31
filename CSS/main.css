@@ -101,3 +101,15 @@ p{
 .fa-solid{
   margin-left: 24px;
 }
+
+.aboutText{
+  display: flex;
+  flex-direction: column;
+  position: absolute; /*important to set to absolute for sublink to work*/
+  z-index: -2;
+  padding: 20px 30px 0px;
+}
+
+.aboutText p{
+  margin: 10px 0;
+}
