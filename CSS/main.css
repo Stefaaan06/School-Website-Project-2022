@@ -12,6 +12,9 @@ body {
   background-size: 4%;
 
   overflow-x: hidden;
+  
+  display: flex;
+  flex-direction: column;
 }
 
 p {
@@ -112,4 +115,32 @@ p{
 
 .aboutText p{
   margin: 10px 0;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+  z-index: -2;
+}
+.bannerImage{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  position: absolute;
+  z-index: -2;
+}
+
+.angeboteContent{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+  z-index: -2;
+  background-color: white;
 }
