@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const username = loginForm.username.value;
       const password = loginForm.password.value;
   
-      if (username == "User1" && password == "Test") {
+      if (username == "TestUser" && password == "1234") {
           location.replace("../index.html");
       } else {
           loginErrorMsg.style.opacity = 1;

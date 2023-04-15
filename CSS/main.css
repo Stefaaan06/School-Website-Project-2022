@@ -12,9 +12,11 @@ body {
   background-size: 4%;
 
   overflow-x: hidden;
-  
   display: flex;
   flex-direction: column;
+
+  position: relative;
+  z-index: -2;
 }
 
 p {
@@ -28,8 +30,11 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color:  #3a3a3a;
+  background-color:  #282634;
   border-radius: 5px;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: rgb(0, 0, 0);
 }
 
 h1{
@@ -68,7 +73,7 @@ p{
   height: 28px;
 }
 .search:hover::placeholder {
-  opacity: 70%;
+  opacity: 40%;
   width: 100%;
 }
 .search:hover{
