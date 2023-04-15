@@ -121,7 +121,6 @@ p{
   margin: 10px 0;
 }
 
-<<<<<<< Updated upstream
 .banner{
   display: flex;
   flex-direction: column;
@@ -149,7 +148,7 @@ p{
   z-index: -2;
   background-color: white;
 }
-=======
+
 .button{
   border-radius: 15px;
   padding: 10px 30px;
@@ -167,4 +166,3 @@ p{
 .button:hover{
   transform: translate(0px, 5px);
 }
->>>>>>> Stashed changes
