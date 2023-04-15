@@ -1,0 +1,48 @@
+h2{
+    text-align: center;
+}
+
+.itemHolder{
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+.items{
+    display: flex;
+    border-style: solid;
+    flex-direction: column;
+    flex: 4 1 auto;
+}
+.checkout{
+    border-style: solid;
+    flex: 1 1 auto;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+.thick{
+    font-weight: bold;
+}
+
+.checkoutButton{
+    border-radius: 15px;
+    padding: 10px 30px;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+  
+    transition: all 1s ease;
+    transform: scale(1);
+    size: 100px;
+    width: fit-content;
+    align-self: center;
+    align-self: flex-end;
+  }
+  
+  .checkoutButton:hover{
+    transform: translate(0px, 5px);
+  }
