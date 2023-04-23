@@ -53,12 +53,13 @@ p{
 }
 .searchBox {
   display: flex;
+  align-content: space-between;
+  flex-direction: column;
   height: 50px;
-  justify-content: flex-end;
   width: auto;
 }
 
-.search {
+#search {
   display: flex;
   font-size: 20px;
   text-decoration: none;
@@ -72,16 +73,41 @@ p{
   border-style: none;
   height: 28px;
 }
-.search:hover::placeholder {
+#search:hover::placeholder {
   opacity: 40%;
   width: 100%;
 }
-.search:hover{
+#search:hover{
   width: 100%;
 }
-.search::placeholder{
+
+#search:hover ~ #list{
+  width: 100%;
+}
+#search::placeholder{
   opacity: 100%;
   color: black;
+}
+
+#list{
+  transition: 0.3s;
+  padding: 6%;
+  width: 40%;
+  font-size:  1.5em;
+  color: white;
+}
+
+.searchItem{
+  list-style-type: none;
+  text-decoration: none;
+  transition: ease-out;
+  transform: scale(1);
+  visibility: hidden;
+  text-align: center;
+} 
+
+.searchItem:hover{
+  transform: scale(1.2);
 }
 
 .logo {

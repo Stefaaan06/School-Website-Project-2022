@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
+    <script src="../JS/serarchbar.js"></script>
   </head>
 
   <body>
@@ -53,8 +54,15 @@
 
         <div class="more">
           <div class="searchBox">
-            <input class="search" type="text" placeholder="Search.." />
+            <input id="search"onkeyup="search_item()"  type="text" placeholder="Search.." />
+            <ol id='list'>
+              <li class="searchItem">ABC</li>
+              <li class="searchItem">123</li>
+              <li class="searchItem">LMNOP</li>
+            </ol>
           </div>
+
+          
 
           <div class="burger">
             <input id="menu__toggle" type="checkbox" />
