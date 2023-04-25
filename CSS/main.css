@@ -97,6 +97,8 @@ p{
   font-size:  1.5em;
   color: white;
   background-color: #1f2029;
+  border-radius: 5px;
+  visibility: hidden;
 }
 
 .searchItem{
