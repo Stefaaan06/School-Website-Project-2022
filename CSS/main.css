@@ -92,9 +92,11 @@ p{
 #list{
   transition: 0.3s;
   padding: 6%;
+  margin: 0;
   width: 40%;
   font-size:  1.5em;
   color: white;
+  background-color: #1f2029;
 }
 
 .searchItem{
