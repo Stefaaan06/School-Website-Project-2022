@@ -83,6 +83,7 @@ p{
 
 #search:hover ~ #list{
   width: 100%;
+  padding: 6%;
 }
 #search::placeholder{
   opacity: 100%;
@@ -91,16 +92,20 @@ p{
 
 #list{
   transition: 0.3s;
-  padding: 6%;
+  padding: 4%;
   margin: 0;
   width: 40%;
   font-size:  1.5em;
   color: white;
   background-color: #1f2029;
-  border-radius: 5px;
+  border-radius: 10px;
   visibility: hidden;
 }
 
+#list:hover{
+  padding: 6%;
+  width: 100%;
+}
 .searchItem{
   list-style-type: none;
   text-decoration: none;
@@ -109,10 +114,6 @@ p{
   visibility: hidden;
   text-align: center;
 } 
-
-.searchItem:hover{
-  transform: scale(1.2);
-}
 
 .logo {
   display: flex;
