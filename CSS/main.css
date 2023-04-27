@@ -202,3 +202,7 @@ p{
 .button:hover{
   transform: translate(0px, 5px);
 }
+
+html{
+  scroll-behavior: smooth;
+}
