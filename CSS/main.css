@@ -55,8 +55,9 @@ p{
   display: flex;
   align-content: space-between;
   flex-direction: column;
-  height: 50px;
   width: auto;
+  flex: 0 1 100%;
+  height: 50px
 }
 
 #search {
@@ -77,8 +78,9 @@ p{
   opacity: 40%;
   width: 100%;
 }
+
 #search:hover{
-  width: 100%;
+  width: 80%; /* das es nicht über dem burger menu steht*/
 }
 
 #search:hover ~ #list{
@@ -92,9 +94,9 @@ p{
 
 #list{
   transition: 0.3s;
-  padding: 4%;
+  padding: 6%;
   margin: 0;
-  width: 40%;
+  width: 100%;
   font-size:  1.5em;
   color: white;
   background-color: #1f2029;
@@ -106,6 +108,7 @@ p{
   padding: 6%;
   width: 100%;
 }
+
 .searchItem{
   list-style-type: none;
   text-decoration: none;
@@ -150,7 +153,7 @@ p{
   flex-direction: column;
   position: absolute; /*important to set to absolute for sublink to work*/
   z-index: -2;
-  padding: 20px 30px 0px;
+  padding: 20px 30px 0;
 }
 
 .aboutText p{
