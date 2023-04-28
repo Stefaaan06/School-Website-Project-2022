@@ -5,13 +5,23 @@ h2{
     text-align: center;
 }
 
-.box{
+.zIndexMask{
     display: flex;
     flex-direction: column;
     z-index: -2;
     flex: 1 0 auto;
 }
-
+.title{
+    flex: 0.6 0 auto;
+    height: 80px;
+    background-color: #282634;
+}
+.title h2{
+    display: flex;
+    font-size: 70px;
+    align-self: center;
+    margin: 0 0 0 3%;
+}
 .itemHolder{
     display:flex;
     width: 100%;
@@ -19,32 +29,6 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.144);
-}
-
-.checkout{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #282634;
-    flex: 2 0 auto;
-    margin: 10px 0px 0px 10px;
-    border-radius: 5px;
-}
-.checkoutButton{
-    border-radius: 15px;
-    padding: 10px 30px;
-    position: relative;
-    display: inline-block;
-    background-color: white;
-    transition: all 1s ease;
-    transform: scale(1);
-    size: 100px;
-    width: fit-content;
-    align-self: center;
-}
-  
-.checkoutButton:hover {
-    transform: translate(0px, 5px);
 }
 .items p{
     margin: 0px;
@@ -122,16 +106,53 @@ h2{
     margin-bottom: 3px;
     color: #99989e;
 }
-.title{
-    flex: 0.6 0 auto;
-    height: 80px;
-    background-color: #282634;
-}
-.title h2{
+
+.checkout{
     display: flex;
-    font-size: 70px;
-    align-self: center;
-    margin: 0 0 0 3%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+    background-color: #282634;
+    flex: 2 0 auto;
+    margin: 10px 0 0 10px;
+    border-radius: 5px;
+    padding: 10px 50px 10px 50px;
+}
+.orderSummery{
+    display: flex;
+    flex-direction: column;
+}
+.orderSummery h3{
+    margin: 37px 0 20px 0;
+    font-size: 1.7em;
+}
+.checkout p{
+    display: flex;
+    margin: 0;
+    padding: 2.5px 0 2.5px 0;
+    font-size: 1.1em;
+    align-self: start;
+    width: 100%;
+}
+.checkout .summe{
+    display: flex;
+    margin-left: auto;
+}
+.checkout hr{
+    width: 100%;
+    margin: 30px 0 30px 0;
+}
+.total h3{
+    margin: 0;
+    font-size: 1.7em;
+    display: flex;
+}
+.total p{
+    font-size: 0.9em;
+}
+.total a{
+    color: white;
+    margin: 0 5px 0 5px;
 }
 .cartBanner{
     flex: 0.75 0 auto;
