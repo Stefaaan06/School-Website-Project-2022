@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-    <script src="../JS/serarchbar.js"></script>
+    <script src="../JS/searchbar.js"></script>
   </head>
 
   <body>
@@ -54,7 +54,7 @@
 
         <div class="more">
           <div class="searchBox">
-            <input id="search"onkeyup="search_item()" type="text" placeholder="Search.." />
+            <input id="search" onkeyup="search_item()" type="text" placeholder="Search.." />
             <ol id='list'>
               <li class="searchItem">ABC</li>
               <li class="searchItem">123</li>
@@ -71,7 +71,7 @@
             </label>
             <ul class="menu__box">
               <div class="account">
-                <img class="account_img" src="../IMG/account.png" />
+                <img class="account_img" src="../IMG/account.png" alt="default profile picture"/>
                 <li>
                   <a href="login.html" class="account_item block">Login</a>
                 </li>
@@ -95,13 +95,41 @@
         <div class="items">
           <div class="item title"><h2>MY SHOPPING CART</h2></div>
           <div class="item">
-              item in cart
+            <img class="itemImage" src="../IMG/temp.jpeg" alt="">
+            <div class="information">
+              <h3>Amazing Item</h3>
+              <p>Produkt Number: XYZ</p>
+              <p>Style: Whatever</p>
+              <p>Color: Green</p>
+              <fieldset>
+                <legend><label for="quantity">Quantity</label></legend>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="1">
+              </fieldset>
+            </div>
+            <div class="actions">
+              <h3>€ 4300,00</h3>
+              <a href="">Remove</a>
+            </div>
           </div>
           <div class="item">
-            item in cart
+            <img class="itemImage" src="../IMG/temp.jpeg" alt="">
+            <div class="information">
+              <h3>Amazing Second Item</h3>
+              <p>Produkt Number: ABC</p>
+              <p>Style: Ever</p>
+              <p>Color: Yellow</p>
+              <fieldset>
+                <legend><label for="quantity2">Quantity</label></legend>
+                <input type="number" id="quantity2" name="quantity" min="1" max="10" placeholder="1">
+              </fieldset>
+            </div>
+            <div class="actions">
+              <h3>€ 8600,00</h3>
+              <a href="">Remove</a>
+            </div>
           </div>
           <div class="item cartBanner">
-            footer oder so ka
+            login for 15% on your next item
           </div>
         </div>
         <div class="checkout">

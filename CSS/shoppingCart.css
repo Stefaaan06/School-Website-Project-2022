@@ -66,8 +66,61 @@ h2{
     background-color: #201f2c;
     margin-bottom: 10px;
 }
-.item:last-child{
-    margin-bottom: 0px;
+.item:not(:first-child):not(:last-child){
+    padding: 10px 10px 10px 4px;
+    flex-direction: row;
+    justify-content: start;
+}
+.itemImage{
+    align-self: center;
+    height: 220px;
+    border-radius: 5px;
+    margin-left: 3%;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 4%;
+}
+.information p{
+    margin: 0;
+    font-size: 1em;
+}
+.information fieldset{
+    background-color: #201f2c;
+    width: fit-content;
+    padding: 0 2px 0 0;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: 7px;
+}
+.information legend{
+    color: white;
+    font-size: 1em;
+}
+.information input{
+    border: none;
+    background-color: #201f2c;
+    color: white;
+    padding: 0 8px 10px 10px;
+}
+.information h3{
+    margin: 0;
+    font-size: 1.5em;
+}
+.actions{
+    display: flex;
+    flex-direction: column;
+    margin: 0 3% 0 auto;
+    justify-content: space-between;
+}
+.actions h3{
+    margin-top: 3px;
+}
+.actions a{
+    margin-bottom: 3px;
+    color: #99989e;
 }
 .title{
     flex: 0.6 0 auto;
