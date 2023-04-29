@@ -1,5 +1,5 @@
 html, body {
-    height: 100%; /* macht das es den ganzen vertikalen platz nutzt, ist wichtig!*/
+    height: 100%; /* macht das es den ganzen vertikalen Platz nutzt, ist wichtig!*/
 }
 h2{
     text-align: center;
@@ -10,6 +10,10 @@ h2{
     flex-direction: column;
     z-index: -2;
     flex: 1 0 auto;
+}
+.zIndexMask a{
+    color: white;
+    margin: 0 5px 0 5px;
 }
 .title{
     flex: 0.6 0 auto;
@@ -31,9 +35,9 @@ h2{
     background-color: rgba(0, 0, 0, 0.144);
 }
 .items p{
-    margin: 0px;
+    margin: 0;
     display: flex;
-    padding: 0px;
+    padding: 0;
 }
 .items{
     display: flex;
@@ -71,7 +75,7 @@ h2{
     margin: 0;
     font-size: 1em;
 }
-.information fieldset{
+.itemHolder fieldset{
     background-color: #201f2c;
     width: fit-content;
     padding: 0 2px 0 0;
@@ -79,11 +83,11 @@ h2{
     margin-top: auto;
     margin-bottom: 7px;
 }
-.information legend{
+.itemHolder legend{
     color: white;
     font-size: 1em;
 }
-.information input{
+.itemHolder input[type="number"], input[type="text"]{
     border: none;
     background-color: #201f2c;
     color: white;
@@ -103,7 +107,7 @@ h2{
     margin-top: 3px;
 }
 .actions a{
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     color: #99989e;
 }
 
@@ -111,7 +115,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: start;
+    justify-content: center;
     background-color: #282634;
     flex: 2 0 auto;
     margin: 10px 0 0 10px;
@@ -123,8 +127,8 @@ h2{
     flex-direction: column;
 }
 .orderSummery h3{
-    margin: 37px 0 20px 0;
-    font-size: 1.7em;
+    margin: 0 0 20px 0;
+    font-size: 1.8em;
 }
 .checkout p{
     display: flex;
@@ -150,11 +154,27 @@ h2{
 .total p{
     font-size: 0.9em;
 }
-.total a{
-    color: white;
-    margin: 0 5px 0 5px;
+.promo{
+    display: flex;
+}
+.promo input[type="submit"], .checkoutButton{
+    height: 42px;
+    align-self: end;
+    margin-bottom: 7px;
+    margin-left: auto;
+    padding: 0 25px 0 25px;
+}
+.checkoutButton{
+    width: 100%;
+    margin: 0;
+    font-size: 1.2em;
+}
+.promo fieldset{
+    width: 70%;
 }
 .cartBanner{
-    flex: 0.75 0 auto;
+    flex: 1 0 auto;
     background-color: #282634;
+    margin-bottom: 0;
+    padding: 5px 0 5px 20px;
 }

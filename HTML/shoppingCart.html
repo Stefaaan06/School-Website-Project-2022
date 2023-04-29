@@ -129,7 +129,7 @@
             </div>
           </div>
           <div class="item cartBanner">
-            login for 15% on your next item
+            <a href="login.html">Login</a> now for a 15% discount on your next purchase!
           </div>
         </div>
         <div class="checkout">
@@ -147,8 +147,17 @@
             </p>
           </div>
           <hr>
-          <div>Payment</div>
-          <!--<a class="checkoutButton block top" href="../index.html">Buy now</a>-->
+          <div>
+            <form class="promo" action="shoppingCart.html">
+            <fieldset>
+              <legend><label for="promoCode">Apply Promocode</label></legend>
+                <input type="text" id="promoCode" name="promoCode">
+            </fieldset>
+              <input type="submit" value="Apply">
+            </form>
+          </div>
+          <hr>
+          <a href="..\index.html"><button type="submit" class="checkoutButton">Checkout</button></a>
         </div>
       </div>
     </div>
