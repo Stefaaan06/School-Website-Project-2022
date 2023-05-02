@@ -68,11 +68,13 @@ p{
   outline: none;
   background-color: white;
   border-radius: 15px;
-  padding: 6%;
   width: 35%;
   transition: 0.3s;
   border-style: none;
-  height: 28px;
+  color: black;
+  height: 85%;
+  flex: 1 0 auto;
+  padding: 5px 10px 5px 10px;
 }
 #search:hover::placeholder {
   opacity: 40%;
