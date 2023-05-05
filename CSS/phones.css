@@ -8,10 +8,6 @@ h2{
     margin: 0;
 }
 
-h3{
-    text-align: center;
-}
-
 .zIndexMask{
     display: flex;
     flex-direction: column;
@@ -22,27 +18,13 @@ h3{
     color: white;
     margin: 0 5px 0 5px;
 }
-.title{
-    flex: 0.6 0 auto;
-    height: 80px;
-    background-color: #282634;
-    text-align: center;
-    font-size: 60px;
-    width: 100%;
-}
-.title h2{
-    display: flex;
-    font-size: 70px;
-    align-self: center;
-    margin: 0 0 0 3%;
-}
 .itemHolder{
     display:flex;
     width: 100%;
     flex: 1 0 100%;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.144);
+    background-color: #282634;
 }
 
 .things{
@@ -66,20 +48,15 @@ h3{
     flex-direction: column;
     flex: 4 1 auto;
     border-radius: 5px;
-    padding-top: 10px;
 }
 .item{
     display: flex;
     flex: 5 0 auto;
     align-content: center;
     border-radius: 5px;
-    background-color: #201f2c;
+    background-color: #282634;
     margin-bottom: 10px;
-}
-.item:not(:first-child):not(:last-child){
-    padding: 10px 10px 10px 4px;
-    flex-direction: row;
-    justify-content: start;
+    padding: 20px 0;
 }
 .itemImage{
     align-self: center;
@@ -91,12 +68,14 @@ h3{
 .information{
     display: flex;
     flex-direction: column;
-    margin-left: 1%;
-
+    margin-left: 3%;
 }
 .information p{
+    display: flex;
     margin: 0;
     font-size: 1em;
+    padding: 0;
+    justify-content: start;
 }
 .itemHolder fieldset{
     background-color: #201f2c;
@@ -134,26 +113,30 @@ h3{
     color: #99989e;
 }
 
-.checkout{
+.filter{
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    align-content: start;
     justify-content: center;
     background-color: #282634;
-    flex: 2 0 auto;
-    margin: 10px 0 0 10px;
+    flex: 1 0 auto;
+    margin: 0 10px 10px 0;
     border-radius: 5px;
-    padding: 10px 50px 10px 50px;
+    padding: 30px 20px 20px 20px;
+    width: 25%;
+}
+.filterMask{
+    position: fixed;
+    width: 300px;
 }
 .orderSummery{
     display: flex;
     flex-direction: column;
 }
 .orderSummery h3{
-    margin: 0 0 20px 0;
+    margin: 0;
     font-size: 1.8em;
 }
-.checkout p{
+.filter p{
     display: flex;
     margin: 0;
     padding: 2.5px 0 2.5px 0;
@@ -161,16 +144,48 @@ h3{
     align-self: start;
     width: 100%;
 }
-.checkout .summe{
+.filter .summe{
     display: flex;
     margin-left: auto;
 }
-.checkout hr{
+.filter hr{
     width: 100%;
     margin: 30px 0 30px 0;
 }
-
 .all{
     display: flex;
     flex-direction: row;
+}
+.title{
+    height: 80px;
+    background-color: #282634;
+    text-align: center;
+    font-size: 60px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 9px;
+    padding: 0;
+}
+.title h2{
+    font-size: 70px;
+    align-self: center;
+}
+input[type="reset"]{
+    height: 42px;
+    align-self: end;
+    margin-bottom: 7px;
+    margin-left: auto;
+    padding: 0 25px 0 25px;
+    width: 100%;
+}
+fieldset{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    accent-color: #838383;
+}
+.description{
+    margin-top: 20px !important;
+    width: 200px;
+    text-align: left;
 }

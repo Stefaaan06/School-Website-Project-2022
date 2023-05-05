@@ -18,7 +18,9 @@ body {
   position: relative;
   z-index: -2;
 }
-
+input{
+  outline: none;
+}
 p {
   color: rgb(255, 255, 255);
 
