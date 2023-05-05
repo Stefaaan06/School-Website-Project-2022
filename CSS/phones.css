@@ -1,0 +1,23 @@
+html, body {
+    height: 100%; /* macht das es den ganzen vertikalen Platz nutzt, ist wichtig!*/
+    scroll-behavior: smooth;
+}
+/*.things{
+    flex-wrap:wrap;
+    flex-direction: column;
+    display: flex;
+    align-content:space-between;
+    justify-content: center;
+}
+.thing1{
+    width:100%;
+    flex-wrap:wrap;
+    flex-direction:row;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+}*/
+
+.item{
+    background-color: #282634;
+}
