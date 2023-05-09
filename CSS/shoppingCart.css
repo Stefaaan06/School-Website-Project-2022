@@ -168,6 +168,37 @@ h2{
     width: 100%;
     margin: 0;
     font-size: 1.2em;
+    transition: all 0.5s ease;
+    border: none;
+    border-radius: 5px;
+}
+
+.checkoutButton:hover{
+    color: white;
+    background-color: #282634;
+    border: solid;
+    border-color: white;
+}
+
+.applyButton{
+    border-width: 2px;
+    width: 20%;
+    margin: 0;
+    font-size: 1.2em;
+    transition: all 0.5s ease;
+    border: none;
+    border-radius: 5px;
+}
+.applyButton:hover{
+    color: white;
+    background-color: #282634;
+    border: solid;
+    border-color: white;
+}
+
+.legend{
+    border-color: white;
+    border-width: 2px;
 }
 .promo fieldset{
     width: 70%;
