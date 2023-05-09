@@ -115,7 +115,8 @@
   transition-duration: 0.3s;
 }
 .sublink_item:hover {
-  background-color: #00000059;
+  color: white;
+  background-color: #282634;
 }
 
 .block::after {

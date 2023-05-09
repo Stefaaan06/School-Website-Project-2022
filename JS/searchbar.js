@@ -7,7 +7,7 @@ function search_item() {
     let y = document.getElementById("list");
           
     for (i = 0; i < x.length; i++) { 
-        if(input.length > 0){
+        if(input.length > 1){
             if (!x[i].innerHTML.toLowerCase().includes(input)) {
                 x[i].style.display="none";
                 x[i].style.visibility = "hidden";

@@ -34,9 +34,6 @@ nav {
   padding: 10px 20px;
   background-color:  #282634;
   border-radius: 5px;
-  border-style: solid;
-  border-width: 0.1px;
-  border-color: rgb(0, 0, 0);
 }
 
 h1{
@@ -103,7 +100,7 @@ p{
   width: 100%;
   font-size:  1.5em;
   color: white;
-  background-color: #1f2029;
+  background-color: #282634;
   border-radius: 10px;
   visibility: hidden;
 }
@@ -121,6 +118,24 @@ p{
   visibility: hidden;
   text-align: center;
 } 
+
+.sublink_item_search{
+  display: block;
+  background: rgb(255, 255, 255);
+  padding: 12px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.sublink_item_search:hover {
+  color: white;
+  background-color: #282634;
+}
 
 .logo {
   display: flex;
