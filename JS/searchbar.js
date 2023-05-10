@@ -12,6 +12,7 @@ function search_item() {
                 x[i].style.display="none";
                 x[i].style.visibility = "hidden";
                 y.style.visibility = "visible";
+                y.style.display="initial"
                 
             }
             else {
