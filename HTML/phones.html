@@ -4,64 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webshop | Home</title>
+    <title>Webshop | Phones</title>
     <link rel="stylesheet" href="../CSS/main.css" />
     <link rel="stylesheet" href="../CSS/dropdown.css" />
     <link rel="stylesheet" href="../CSS/links-sublinks.css" />
-    <link rel="stylesheet" href="../CSS/phones.css">
+    <link rel="stylesheet" href="../CSS/category.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
+    <script src="../JS/searchbar.js"></script>
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo">logo</div>
+        <a href="../index.html" class="logo"><img src="../IMG/transparent_gadgexLogo.png" alt="Logo" height="30px"><h1>GADGEX</h1></a>
         <div class="links">
-          <a id="phones" class="link block top" href="">Phones</a>
+          <a id="phones" class="link block top" href="../HTML/phones.html">Phones</a>
 
           <ul id="sublink-phones">
-            <li><a class="sublink_item" href="../HTML/phones.html#phone1">Phone1</a></li>
-            <li><a class="sublink_item" href="../HTML/phones.html#phone2">Phone2</a></li>
-            <li><a class="sublink_item" href="../HTML/phones.html#phone3">Phone3</a></li>
-            <li><a class="sublink_item" href="../HTML/phones.html#phone4">Phone4</a></li>
-            <li><a class="sublink_item" href="../HTML/phones.html#phone5">Phone5</a></li>
+            <li><a class="sublink_item" href="../HTML/phones.html#phone1">Apple IPhone 13</a></li>
+            <li><a class="sublink_item" href="../HTML/phones.html#phone2">Apple IPhone 14</a></li>
+            <li><a class="sublink_item" href="../HTML/phones.html#phone3">Google Pixel 7</a></li>
+            <li><a class="sublink_item" href="../HTML/phones.html#phone4">Samsung S23</a></li>
+            <li><a class="sublink_item" href="../HTML/phones.html#phone5">Samsung S23 Ultra</a></li>
           </ul>
 
-          <a id="laptops" class="link block top" href="">Laptops</a>
+          <a id="laptops" class="link block top" href="../HTML/laptops.html">Laptops</a>
 
           <ul id="sublink-laptops">
-            <li><a class="sublink_item" href="laptop1">Laptop1</a></li>
-            <li><a class="sublink_item" href="laptop2">Laptop2</a></li>
-            <li><a class="sublink_item" href="laptop3">Laptop3</a></li>
-            <li><a class="sublink_item" href="laptop4">Laptop4</a></li>
-            <li><a class="sublink_item" href="laptop5">Laptop5</a></li>
+            <li><a class="sublink_item" href="../HTML/laptops.html#laptop1">Apple Macbook Pro M2</a></li>
+            <li><a class="sublink_item" href="../HTML/laptops.html#laptop2">Apple Macbook Air M2</a></li>
+            <li><a class="sublink_item" href="../HTML/laptops.html#laptop3">Framework 13"</a></li>
+            <li><a class="sublink_item" href="../HTML/laptops.html#laptop4">XMG Fusion 15</a></li>
+            <li><a class="sublink_item" href="../HTML/laptops.html#laptop5">Dell XPS 15</a></li>
           </ul>
 
-          <a id="tablets" class="link block top" href="">Tablets</a>
+          <a id="tablets" class="link block top" href="../HTML/tablets.html">Tablets</a>
 
           <ul id="sublink-tablets">
-            <li><a class="sublink_item" href="tablet1">Tablet1</a></li>
-            <li><a class="sublink_item" href="tablet2">Tablet2</a></li>
-            <li><a class="sublink_item" href="tablet3">Tablet3</a></li>
-            <li><a class="sublink_item" href="tablet4">Tablet4</a></li>
-            <li><a class="sublink_item" href="tablet5">Tablet5</a></li>
+            <li><a class="sublink_item" href="../HTML/tablets.html#tablet1">Apple IPad Pro M2</a></li>
+            <li><a class="sublink_item" href="../HTML/tablets.html#tablet2">Apple IPad Air M2</a></li>
+            <li><a class="sublink_item" href="../HTML/tablets.html#tablet3">Remarkable 2</a></li>
+            <li><a class="sublink_item" href="../HTML/tablets.html#tablet4">Samsung Galaxy Tab S8</a></li>
+            <li><a class="sublink_item" href="../HTML/tablets.html#tablet5">Huawei Mate Pad Pro</a></li>
           </ul>
         </div>
 
         <div class="more">
           <div class="searchBox">
-            <input
-              id="search"
-              onkeyup="search_item()"
-              type="text"
-              placeholder="Search.."
-            />
-            <ol id="list">
-              <li class="searchItem">ABC</li>
-              <li class="searchItem">123</li>
-              <li class="searchItem">Wifi Pineapple Mark VII</li>
+            <input id="search" onkeyup="search_item()" type="text" placeholder="Search.." />
+            <ol id='list'>
+              <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone1">Apple IPhone 13</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone2">Apple IPhone 14</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone3">Google Pixel 7</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone4">Samsung S23</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone5">Samsung S23 Ultra</a></li>
+
+              <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet1">Apple IPad Pro M2</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet2">Apple IPad Air M2</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet3">Remarkable 2</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet4">Samsung Galaxy Tab S8</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet5">Huawei Mate Pad Pro</a></li>
+
+              <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop1">Apple Macbook Pro M2</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop2">Apple Macbook Air M2</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="laptops.html">Framework 13"</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop3">XMG Fusion 15</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop5">Dell XPS 15</a></li>
             </ol>
           </div>
 
@@ -137,7 +147,6 @@
                   <label><input type="checkbox" name="marke" checked>Andere</label>
                 </fieldset>
                 <hr>
-                <input type="reset" value="Reset">
               </div>
             </form>
           </div>
@@ -146,7 +155,7 @@
           <div class="item">
             <img class="itemImage" src="../IMG/Phone1.jpg" alt="Bild eines S23 Ultra">
             <div class="information">
-              <h3 id="phone1">Amazing first phone</h3>
+              <h3 id="phone1">Apple IPhone 13</h3>
               <p>Produkt Number: XYZ</p>
               <p>Style: Whatever</p>
               <p>Color: Green</p>
@@ -160,7 +169,7 @@
           <div class="item">
             <img class="itemImage" src="../IMG/Phone2.jpg" alt="Bild eines IPhone 14 Pro Max">
             <div class="information">
-              <h3 id="phone2">Amazing Second Item</h3>
+              <h3 id="phone2">Apple IPhone 14</h3>
               <p>Produkt Number: ABC</p>
               <p>Style: Ever</p>
               <p>Color: Yellow</p>
@@ -174,7 +183,7 @@
           <div class="item">
             <img class="itemImage" src="../IMG/Phone3.jpg" alt="Bild eines Honor Magic 5 Pro">
             <div class="information">
-              <h3 id="phone3">Amazing third Item</h3>
+              <h3 id="phone3">Google Pixel 7</h3>
               <p>Produkt Number: ABC</p>
               <p>Style: Ever</p>
               <p>Color: Yellow</p>
@@ -188,7 +197,7 @@
           <div class="item">
             <img class="itemImage" src="../IMG/Phone4.jpg" alt="Bild des Moto Edge 40 Pro">
             <div class="information">
-              <h3 id="phone4">Amazing fourth Item</h3>
+              <h3 id="phone4">Samsung S23</h3>
               <p>Produkt Number: ABC</p>
               <p>Style: Ever</p>
               <p>Color: Yellow</p>
@@ -202,7 +211,7 @@
           <div class="item">
             <img class="itemImage" src="../IMG/Phone5.jpg" alt="Bild des Xiaomi 13 Pro">
             <div class="information">
-              <h3 id="phone5">Amazing fifth Item</h3>
+              <h3 id="phone5">Samsung S23 Ultra</h3>
               <p>Produkt Number: ABC</p>
               <p>Style: Ever</p>
               <p>Color: Yellow</p>

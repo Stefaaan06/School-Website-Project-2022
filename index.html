@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/dropdown.css" />
     <link rel="stylesheet" href="CSS/links-sublinks.css" />
+    <link rel="stylesheet" href="CSS/index.css">
     <script src="JS/searchbar.js"></script>
     <link
       rel="stylesheet"
@@ -18,46 +19,60 @@
   <body>
     <header>
       <nav>
-        <div class="logo">logo</div>
+        <a href="index.html" class="logo"><img src="IMG/transparent_gadgexLogo.png" alt="Logo" height="30px"><h1>GADGEX</h1></a>
         <div class="links">
           <a id="phones" class="link block top" href="HTML/phones.html">Phones</a>
 
           <ul id="sublink-phones">
-            <li><a class="sublink_item" href="HTML/phones.html#phone1">Phone1</a></li>
-            <li><a class="sublink_item" href="HTML/phones.html#phone2">Phone2</a></li>
-            <li><a class="sublink_item" href="HTML/phones.html#phone3">Phone3</a></li>
-            <li><a class="sublink_item" href="HTML/phones.html#phone4">Phone4</a></li>
-            <li><a class="sublink_item" href="HTML/phones.html#phone5">Phone5</a></li>
+            <li><a class="sublink_item" href="HTML/phones.html#phone1">Apple IPhone 13</a></li>
+            <li><a class="sublink_item" href="HTML/phones.html#phone2">Apple IPhone 14</a></li>
+            <li><a class="sublink_item" href="HTML/phones.html#phone3">Google Pixel 7</a></li>
+            <li><a class="sublink_item" href="HTML/phones.html#phone4">Samsung S23</a></li>
+            <li><a class="sublink_item" href="HTML/phones.html#phone5">Samsung S23 Ultra</a></li>
           </ul>
 
           <a id="laptops" class="link block top" href="HTML/laptops.html">Laptops</a>
 
           <ul id="sublink-laptops">
-            <li><a class="sublink_item" href="laptop1">Laptop1</a></li>
-            <li><a class="sublink_item" href="laptop2">Laptop2</a></li>
-            <li><a class="sublink_item" href="laptop3">Laptop3</a></li>
-            <li><a class="sublink_item" href="laptop4">Laptop4</a></li>
-            <li><a class="sublink_item" href="laptop5">Laptop5</a></li>
+            <li><a class="sublink_item" href="HTML/laptops.html#laptop1">Apple Macbook Pro M2</a></li>
+            <li><a class="sublink_item" href="HTML/laptops.html#laptop2">Apple Macbook Air M2</a></li>
+            <li><a class="sublink_item" href="HTML/laptops.html#laptop3">Framework 13"</a></li>
+            <li><a class="sublink_item" href="HTML/laptops.html#laptop4">XMG Fusion 15</a></li>
+            <li><a class="sublink_item" href="HTML/laptops.html#laptop5">Dell XPS 15</a></li>
           </ul>
 
           <a id="tablets" class="link block top" href="HTML/tablets.html">Tablets</a>
 
           <ul id="sublink-tablets">
-            <li><a class="sublink_item" href="tablet1">Tablet1</a></li>
-            <li><a class="sublink_item" href="tablet2">Tablet2</a></li>
-            <li><a class="sublink_item" href="tablet3">Tablet3</a></li>
-            <li><a class="sublink_item" href="tablet4">Tablet4</a></li>
-            <li><a class="sublink_item" href="tablet5">Tablet5</a></li>
+            <li><a class="sublink_item" href="HTML/tablets.html#tablet1">Apple IPad Pro M2</a></li>
+            <li><a class="sublink_item" href="HTML/tablets.html#tablet2">Apple IPad Air M2</a></li>
+            <li><a class="sublink_item" href="HTML/tablets.html#tablet3">Remarkable 2</a></li>
+            <li><a class="sublink_item" href="HTML/tablets.html#tablet4">Samsung Galaxy Tab S8</a></li>
+            <li><a class="sublink_item" href="HTML/tablets.html#tablet5">Huawei Mate Pad Pro</a></li>
           </ul>
         </div>
 
         <div class="more">
           <div class="searchBox">
-            <input id="search"onkeyup="search_item()" type="text" placeholder="Search.." />
+            <input id="search" onkeyup="search_item()" type="text" placeholder="Search.." />
             <ol id='list'>
-              <li class="searchItem">ABC</li>
-              <li class="searchItem">123</li>
-              <li class="searchItem">Wifi Pineapple Mark VII</li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/phones.html#phone1">Apple IPhone 13</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/phones.html#phone2">Apple IPhone 14</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/phones.html#phone3">Google Pixel 7</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/phones.html#phone4">Samsung S23</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/phones.html#phone5">Samsung S23 Ultra</a></li>
+
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/tablets.html#tablet1">Apple IPad Pro M2</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/tablets.html#tablet2">Apple IPad Air M2</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/tablets.html#tablet3">Remarkable 2</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/tablets.html#tablet4">Samsung Galaxy Tab S8</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/tablets.html#tablet5">Huawei Mate Pad Pro</a></li>
+
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/laptops.html#laptop1">Apple Macbook Pro M2</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/laptops.html#laptop2">Apple Macbook Air M2</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/laptops.html#laptop3">Framework 13"</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/laptops.html#laptop3">XMG Fusion 15</a></li>
+              <li class="searchItem"><a class="sublink_item_search" href="HTML/laptops.html#laptop5">Dell XPS 15</a></li>
             </ol>
           </div>
 
@@ -68,7 +83,7 @@
             </label>
             <ul class="menu__box">
               <div class="account">
-                <img class="account_img" src="IMG/account.png" />
+                <img class="account_img" src="IMG/account.png" alt="default profile picture"/>
                 <li>
                   <a href="HTML/login.html" class="account_item block">Login</a>
                 </li>
@@ -88,8 +103,37 @@
       </nav>
     </header>
     <div class="banner">
-      <img class="bannerImage" src="img/banner1.jpg" alt="Apple Products" />
+      <img class="bannerImage" src="IMG/bannerApple.jpg" alt="Apple Products" />
+      <h3>New from Apple</h3>
     </div>
-    <div class="angeboteContent">Die neuesten Laptops</div>
+    <a href="HTML/phones.html#phone2" class="angeboteContent">
+      <h4>iPhone 14</h4>
+      <h5>Wonderfull.</h5>
+      <img src="IMG/iphone14banner.png" alt="Iphone 14, in a variety of colors">
+    </a>
+
+    <div class="banner">
+      <img class="bannerImage" src="IMG/bannerSamsung.png" alt="Samsung Products" />
+      <h3>New from Samsung</h3>
+    </div>
+    <a href="HTML/phones.html#phone5" class="angeboteContent">
+      <h4>S23 Ultra</h4>
+      <h5>Stellar.</h5>
+      <img src="IMG/s23ultraBanner.png" alt="Samsung S23 Ultra, in dark Green">
+    </a>
+
+    <div class="banner">
+      <img class="bannerImage" src="IMG/bannerDell.png" alt="Samsung Products" />
+      <h3>New from Dell</h3>
+    </div>
+    <a href="HTML/laptops.html#laptop5" class="angeboteContent">
+      <h4>XPS 15</h4>
+      <h5>Power.</h5>
+      <img src="IMG/xps15banner.png" alt="Samsung S23 Ultra, in dark Green">
+    </a>
+
+  <footer class="banner footer">
+    <a href="HTML/privacyPolicy.html">Privacy Policy</a> | <a href="HTML/help.html">Need Help?</a>| <a href="HTML/about.html">About us</a>
+  </footer>
   </body>
 </html>

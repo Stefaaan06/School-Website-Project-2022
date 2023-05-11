@@ -111,6 +111,7 @@ h2{
 .actions a{
     margin-bottom: 4px;
     color: #99989e;
+    text-decoration: underline;
 }
 
 .filter{

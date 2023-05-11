@@ -2,17 +2,17 @@
   opacity: 0;
 }
 #menu__toggle:checked + .menu__btn > span {
-  background-color: black;
+  background-color: white;
   transform: rotate(45deg);
   position: fixed;
 }
 #menu__toggle:checked + .menu__btn > span::before {
-  background-color: black;
+  background-color: #282634;
   top: 0;
   transform: rotate(0deg);
 }
 #menu__toggle:checked + .menu__btn > span::after {
-  background-color: black;
+  background-color: #282634;
   top: 0;
   transform: rotate(90deg);
 }
@@ -72,7 +72,8 @@
   transition-duration: .30s;
 }
 .menu__item:hover {
-  background-color: #00000059;
+  color: white;
+  background-color: #282634;
 }
 
 .account{

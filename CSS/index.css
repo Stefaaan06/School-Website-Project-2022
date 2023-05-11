@@ -1,0 +1,68 @@
+html, body {
+    /*height: 100%; /* macht das es den ganzen vertikalen Platz nutzt, ist wichtig!*/
+}
+
+.banner{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    z-index: -2;
+    justify-content: center;
+}
+.bannerImage{
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    z-index: -2;
+}
+.angeboteContent{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    z-index: -2;
+    background-color: white;
+    padding: 20px 0 30px 0;
+    width: 100%;
+}
+.banner h3{
+    align-self: center;
+    font-size: 4em;
+}
+.angeboteContent h4{
+    color: black;
+    align-self: center;
+    font-size: 3em;
+    margin: 0;
+}
+.angeboteContent h5{
+    color: black;
+    align-self: center;
+    font-size: 1.5em;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+}
+.angeboteContent img{
+    width: 45%;
+    align-self: center;
+}
+.footer{
+    background-color: #282634;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    color: white;
+    justify-content: start;
+    align-items: center;
+}
+a{
+    padding: 0 5px;
+    color: white;
+    text-decoration: underline;
+}

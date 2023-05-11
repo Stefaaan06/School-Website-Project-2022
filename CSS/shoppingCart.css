@@ -109,6 +109,7 @@ h2{
 .actions a{
     margin-bottom: 4px;
     color: #99989e;
+    text-decoration: underline;
 }
 
 .checkout{
@@ -162,12 +163,39 @@ h2{
     align-self: end;
     margin-bottom: 7px;
     margin-left: auto;
-    padding: 0 25px 0 25px;
 }
 .checkoutButton{
     width: 100%;
     margin: 0;
     font-size: 1.2em;
+    transition: all 0.5s ease;
+    border: none;
+    border-radius: 5px;
+}
+
+.checkoutButton:hover{
+    color: white;
+    background-color: #282634;
+    border: solid white;
+}
+
+.applyButton{
+    width: 20%;
+    margin: 0;
+    font-size: 1.2em;
+    transition: all 0.5s ease;
+    border: 2px none;
+    border-radius: 5px;
+}
+.applyButton:hover{
+    color: white;
+    background-color: #282634;
+    border: solid white;
+}
+
+.legend{
+    border-color: white;
+    border-width: 2px;
 }
 .promo fieldset{
     width: 70%;
