@@ -1,3 +1,8 @@
+<!--
+ Main Page für Laptops, hier kann man alle laptop produkte finden
+ @author Stefan Crasninaec, Samuel Steinhart, Eric Fuchs
+ @version 11.05.2023
+ -->
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -17,93 +22,100 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="../index.html" class="logo"><img src="../IMG/transparent_gadgexLogo.png" alt="Logo" height="30px"><h1>GADGEX</h1></a>
-        <div class="links">
-          <a id="phones" class="link block top" href="../HTML/phones.html">Phones</a>
+  <!-- Navbar, mit ausfahrbaren elementen welche angeklickt werden -> funktionieren über animationen -->
+  <header>
+    <nav>
+      <a href="../index.html" class="logo"><img src="../IMG/transparent_gadgexLogo.png" alt="Logo" height="30px"><h1>GADGEX</h1></a>
+      <div class="links">
+        <a id="phones" class="link block top" href="../HTML/phones.html">Phones</a>
 
-          <ul id="sublink-phones">
-            <li><a class="sublink_item" href="../HTML/phones.html#phone1">Apple IPhone 13</a></li>
-            <li><a class="sublink_item" href="../HTML/phones.html#phone2">Apple IPhone 14</a></li>
-            <li><a class="sublink_item" href="../HTML/phones.html#phone3">Google Pixel 7</a></li>
-            <li><a class="sublink_item" href="../HTML/phones.html#phone4">Samsung S23</a></li>
-            <li><a class="sublink_item" href="../HTML/phones.html#phone5">Samsung S23 Ultra</a></li>
-          </ul>
+        <ul id="sublink-phones">
+          <li><a class="sublink_item" href="../HTML/phones.html#phone1">Apple IPhone 13</a></li>
+          <li><a class="sublink_item" href="../HTML/phones.html#phone2">Apple IPhone 14</a></li>
+          <li><a class="sublink_item" href="../HTML/phones.html#phone3">Google Pixel 7</a></li>
+          <li><a class="sublink_item" href="../HTML/phones.html#phone4">Samsung S23</a></li>
+          <li><a class="sublink_item" href="../HTML/phones.html#phone5">Samsung S23 Ultra</a></li>
+        </ul>
 
-          <a id="laptops" class="link block top" href="../HTML/laptops.html">Laptops</a>
+        <a id="laptops" class="link block top" href="../HTML/laptops.html">Laptops</a>
 
-          <ul id="sublink-laptops">
-            <li><a class="sublink_item" href="../HTML/laptops.html#laptop1">Apple Macbook Pro M2</a></li>
-            <li><a class="sublink_item" href="../HTML/laptops.html#laptop2">Apple Macbook Air M2</a></li>
-            <li><a class="sublink_item" href="../HTML/laptops.html#laptop3">Framework 13"</a></li>
-            <li><a class="sublink_item" href="../HTML/laptops.html#laptop4">XMG Fusion 15</a></li>
-            <li><a class="sublink_item" href="../HTML/laptops.html#laptop5">Dell XPS 15</a></li>
-          </ul>
+        <ul id="sublink-laptops">
+          <li><a class="sublink_item" href="../HTML/laptops.html#laptop1">Apple Macbook Pro M2</a></li>
+          <li><a class="sublink_item" href="../HTML/laptops.html#laptop2">Apple Macbook Air M2</a></li>
+          <li><a class="sublink_item" href="../HTML/laptops.html#laptop3">Framework 13"</a></li>
+          <li><a class="sublink_item" href="../HTML/laptops.html#laptop4">XMG Fusion 15</a></li>
+          <li><a class="sublink_item" href="../HTML/laptops.html#laptop5">Dell XPS 15</a></li>
+        </ul>
 
-          <a id="tablets" class="link block top" href="../HTML/tablets.html">Tablets</a>
+        <a id="tablets" class="link block top" href="../HTML/laptops.html">Tablets</a>
 
-          <ul id="sublink-tablets">
-            <li><a class="sublink_item" href="../HTML/tablets.html#tablet1">Apple IPad Pro M2</a></li>
-            <li><a class="sublink_item" href="../HTML/tablets.html#tablet2">Apple IPad Air M2</a></li>
-            <li><a class="sublink_item" href="../HTML/tablets.html#tablet3">Remarkable 2</a></li>
-            <li><a class="sublink_item" href="../HTML/tablets.html#tablet4">Samsung Galaxy Tab S8</a></li>
-            <li><a class="sublink_item" href="../HTML/tablets.html#tablet5">Huawei Mate Pad Pro</a></li>
-          </ul>
+        <ul id="sublink-tablets">
+          <li><a class="sublink_item" href="../HTML/tablets.html#tablet1">Apple IPad Pro M2</a></li>
+          <li><a class="sublink_item" href="../HTML/tablets.html#tablet2">Apple IPad Air M2</a></li>
+          <li><a class="sublink_item" href="../HTML/tablets.html#tablet3">Remarkable 2</a></li>
+          <li><a class="sublink_item" href="../HTML/tablets.html#tablet4">Samsung Galaxy Tab S8</a></li>
+          <li><a class="sublink_item" href="../HTML/tablets.html#tablet5">Huawei Mate Pad Pro</a></li>
+        </ul>
+      </div>
+
+
+      <div class="more">
+        <!-- searchbar, that works with js. Script serches for similar items to the items that were put in-->
+        <div class="searchBox">
+          <!-- Liste der Produkte welche man finden kann -->
+          <input id="search" onkeyup="search_item()" type="text" placeholder="Search.." />
+          <ol id='list'>
+            <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone1">Apple IPhone 13</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone2">Apple IPhone 14</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone3">Google Pixel 7</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone4">Samsung S23</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone5">Samsung S23 Ultra</a></li>
+
+            <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet1">Apple IPad Pro M2</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet2">Apple IPad Air M2</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet3">Remarkable 2</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet4">Samsung Galaxy Tab S8</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet5">Huawei Mate Pad Pro</a></li>
+
+            <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop1">Apple Macbook Pro M2</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop2">Apple Macbook Air M2</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="laptops.html">Framework 13"</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop3">XMG Fusion 15</a></li>
+            <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop5">Dell XPS 15</a></li>
+          </ol>
         </div>
 
-        <div class="more">
-          <div class="searchBox">
-            <input id="search" onkeyup="search_item()" type="text" placeholder="Search.." />
-            <ol id='list'>
-              <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone1">Apple IPhone 13</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone2">Apple IPhone 14</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone3">Google Pixel 7</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone4">Samsung S23</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone5">Samsung S23 Ultra</a></li>
-
-              <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet1">Apple IPad Pro M2</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet2">Apple IPad Air M2</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet3">Remarkable 2</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet4">Samsung Galaxy Tab S8</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet5">Huawei Mate Pad Pro</a></li>
-
-              <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop1">Apple Macbook Pro M2</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop2">Apple Macbook Air M2</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="laptops.html">Framework 13"</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop3">XMG Fusion 15</a></li>
-              <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop5">Dell XPS 15</a></li>
-            </ol>
-          </div>
-
-          <div class="burger">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-            <ul class="menu__box">
-              <div class="account">
-                <img class="account_img" src="../IMG/account.png" alt="default profile picture"/>
-                <li>
-                  <a href="../HTML/login.html" class="account_item block">Login</a>
-                </li>
-              </div>
-
-              <li><a class="menu__item" href="../index.html">Home</a></li>
+        <!-- Burger Menu welches auf click durch eine CSS animation ausgefahren werden kann. Hier können links zu der Homepage, About Page, etc gefunden werden -->
+        <div class="burger">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <div class="account">
+              <img class="account_img" src="../IMG/account.png" alt="default profile picture"/>
               <li>
-                <a class="menu__item" href="../HTML/shoppingCart.html"
-                  >Shopping Cart <i class="fa-solid fa-cart-shopping"></i
-                ></a>
+                <a href="login.html" class="account_item block">Login</a>
               </li>
-              <li><a class="menu__item" href="../HTML/about.html">About</a></li>
-              <li><a class="menu__item" href="../HTML/help.html">Help</a></li>
-            </ul>
-          </div>
+            </div>
+
+            <li><a class="menu__item" href="../index.html">Home</a></li>
+            <li>
+              <a class="menu__item" href="shoppingCart.html"
+              >Shopping Cart <i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li><a class="menu__item" href="about.html">About</a></li>
+            <li><a class="menu__item" href="help.html">Help</a></li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
+  <!-- Haupt-Page -->
     <div class="zIndexMask"><h2 class="item title">LAPTOPS</h2></div>
     <div class="all zIndexMask">
+      <!-- Filter für die Laptops -->
       <div class="filter">
         <div class="filterMask">
           <form action="phones.html">
@@ -140,6 +152,7 @@
           </form>
         </div>
       </div>
+      <!-- Lister der Items-->
       <div class="items">
         <div class="item">
           <img class="itemImage" src="../IMG/temp.jpeg" alt="">

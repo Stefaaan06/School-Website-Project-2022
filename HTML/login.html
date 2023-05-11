@@ -1,3 +1,8 @@
+<!--
+ Login Page die mit JS dem User erlaubt sich einzuloggen
+ @author Stefan Crasninaec, Samuel Steinhart, Eric Fuchs
+ @version 11.05.2023
+ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,13 +20,13 @@
     <main id="main-holder">
 
       <h1 id="login-header">Login</h1>
-      
+      <!-- Login Eingaben-->
       <form id="login-form">
         <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
         <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
         <input type="submit" value="Login" id="login-form-submit">
       </form>
-    
+      <!-- Error msg falls die Eingabe Falsch ist-->
       <div id="login-error-msg-holder">
         <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
       </div>
