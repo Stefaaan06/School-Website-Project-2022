@@ -1,3 +1,8 @@
+<!--
+ Main Page, zeigt die neusten Produkte und Angebote
+ @author Stefan Crasninaec, Samuel Steinhart, Eric Fuchs
+ @version 11.05.2023
+ -->
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -17,6 +22,7 @@
   </head>
 
   <body>
+    <!-- Navbar, mit ausfahrbaren elementen welche angeklickt werden -> funktionieren über animationen -->
     <header>
       <nav>
         <a href="index.html" class="logo"><img src="IMG/transparent_gadgexLogo.png" alt="Logo" height="30px"><h1>GADGEX</h1></a>
@@ -53,9 +59,11 @@
         </div>
 
         <div class="more">
+          <!-- searchbar, that works with js. Script serches for similar items to the items that were put in-->
           <div class="searchBox">
             <input id="search" onkeyup="search_item()" type="text" placeholder="Search.." />
             <ol id='list'>
+              <!-- Liste der Produkte welche man finden kann -->
               <li class="searchItem"><a class="sublink_item_search" href="HTML/phones.html#phone1">Apple IPhone 13</a></li>
               <li class="searchItem"><a class="sublink_item_search" href="HTML/phones.html#phone2">Apple IPhone 14</a></li>
               <li class="searchItem"><a class="sublink_item_search" href="HTML/phones.html#phone3">Google Pixel 7</a></li>
@@ -76,6 +84,7 @@
             </ol>
           </div>
 
+          <!-- Burger Menu welches auf click durch eine CSS animation ausgefahren werden kann. Hier können links zu der Homepage, About Page, etc gefunden werden -->
           <div class="burger">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
@@ -102,6 +111,7 @@
         </div>
       </nav>
     </header>
+    <!-- Bilder & Titel für die neusten produkte -->
     <div class="banner">
       <img class="bannerImage" src="IMG/bannerApple.jpg" alt="Apple Products" />
       <h3>New from Apple</h3>
@@ -131,7 +141,7 @@
       <h5>Power.</h5>
       <img src="IMG/xps15banner.png" alt="Samsung S23 Ultra, in dark Green">
     </a>
-
+    <!-- Footer, welcher nochmal zur About Page, Help Page und Privacy Policy verlinkt-->
   <footer class="banner footer">
     <a href="HTML/privacyPolicy.html">Privacy Policy</a> | <a href="HTML/help.html">Need Help?</a>| <a href="HTML/about.html">About us</a>
   </footer>

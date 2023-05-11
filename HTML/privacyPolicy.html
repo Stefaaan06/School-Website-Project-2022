@@ -1,3 +1,8 @@
+<!--
+ Privacy Policy der Site
+ @author Stefan Crasninaec, Samuel Steinhart, Eric Fuchs
+ @version 11.05.2023
+ -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -16,10 +21,10 @@
 </head>
 
 <body>
+<!-- Navbar, mit ausfahrbaren elementen welche angeklickt werden -> funktionieren über animationen -->
 <header>
   <nav>
-    <a href="../index.html" class="logo"><img src="../IMG/transparent_gadgexLogo.png" alt="Logo" height="30px">
-      <h1>GADGEX</h1></a>
+    <a href="../index.html" class="logo"><img src="../IMG/transparent_gadgexLogo.png" alt="Logo" height="30px"><h1>GADGEX</h1></a>
     <div class="links">
       <a id="phones" class="link block top" href="../HTML/phones.html">Phones</a>
 
@@ -41,7 +46,7 @@
         <li><a class="sublink_item" href="../HTML/laptops.html#laptop5">Dell XPS 15</a></li>
       </ul>
 
-      <a id="tablets" class="link block top" href="../HTML/tablets.html">Tablets</a>
+      <a id="tablets" class="link block top" href="../HTML/laptops.html">Tablets</a>
 
       <ul id="sublink-tablets">
         <li><a class="sublink_item" href="../HTML/tablets.html#tablet1">Apple IPad Pro M2</a></li>
@@ -52,9 +57,12 @@
       </ul>
     </div>
 
+
     <div class="more">
+      <!-- searchbar, that works with js. Script serches for similar items to the items that were put in-->
       <div class="searchBox">
-        <input id="search" onkeyup="search_item()" type="text" placeholder="Search.."/>
+        <!-- Liste der Produkte welche man finden kann -->
+        <input id="search" onkeyup="search_item()" type="text" placeholder="Search.." />
         <ol id='list'>
           <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone1">Apple IPhone 13</a></li>
           <li class="searchItem"><a class="sublink_item_search" href="phones.html#phone2">Apple IPhone 14</a></li>
@@ -65,22 +73,20 @@
           <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet1">Apple IPad Pro M2</a></li>
           <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet2">Apple IPad Air M2</a></li>
           <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet3">Remarkable 2</a></li>
-          <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet4">Samsung Galaxy Tab S8</a>
-          </li>
+          <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet4">Samsung Galaxy Tab S8</a></li>
           <li class="searchItem"><a class="sublink_item_search" href="tablets.html#tablet5">Huawei Mate Pad Pro</a></li>
 
-          <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop1">Apple Macbook Pro M2</a>
-          </li>
-          <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop2">Apple Macbook Air M2</a>
-          </li>
+          <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop1">Apple Macbook Pro M2</a></li>
+          <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop2">Apple Macbook Air M2</a></li>
           <li class="searchItem"><a class="sublink_item_search" href="laptops.html">Framework 13"</a></li>
           <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop3">XMG Fusion 15</a></li>
           <li class="searchItem"><a class="sublink_item_search" href="laptops.html#laptop5">Dell XPS 15</a></li>
         </ol>
       </div>
 
+      <!-- Burger Menu welches auf click durch eine CSS animation ausgefahren werden kann. Hier können links zu der Homepage, About Page, etc gefunden werden -->
       <div class="burger">
-        <input id="menu__toggle" type="checkbox"/>
+        <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
@@ -105,6 +111,7 @@
     </div>
   </nav>
 </header>
+<!-- Text, welcher die Privacy Policy erklärt-->
 <div class="aboutContent">
   <div class="aboutText">
     <h1>Privacy Policy:</h1>

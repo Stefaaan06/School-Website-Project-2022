@@ -1,3 +1,8 @@
+<!--
+ Login Page die dem User erlaubt sich zu Registrieren (funktioniert automatisch wegen "Server Problemen" nicht.
+ @author Stefan Crasninaec, Samuel Steinhart, Eric Fuchs
+ @version 11.05.2023
+ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,23 +11,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webshop | Register</title>
     <link rel="stylesheet" href="../CSS/login.css" />
-    <script src="../JS/searchbar.js"></script>
-    
   </head>
 
   <body>
-
     <main id="main-holder">
 
       <h1 id="login-header">Register</h1>
-      
+
+      <!-- Registrierungs-Daten -->>
       <form id="login-form">
         <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
         <input type="email" name="password" id="email-field" class="login-form-field" placeholder="Email">
         <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
         <input type="submit" value="Register" id="login-form-submit">
       </form>
-    
+      <!-- Error Msg die beim Versuch einen Account zu Machen kommt-->
       <div id="login-error-msg-holder">
         <p id="login-error-msg">Server Issue<span id="error-msg-second-line">Please try again later</span></p>
       </div>
