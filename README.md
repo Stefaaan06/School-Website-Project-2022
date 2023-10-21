@@ -1,4 +1,10 @@
-# Website-Project
-Tech-Website-Project
+# School Website Project - 2022
 
-Small school project for a imaginary tech website.
+A very simple Tech website. Only pure JS, CSS & HTML
+
+# Credits
+
+  Developers: [Stefaaan](https://twitter.com/Stefaaan06) , Eric, SamyEpik30
+  
+    
+  
